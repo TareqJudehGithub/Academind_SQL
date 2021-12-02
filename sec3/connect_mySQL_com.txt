@@ -1,0 +1,90 @@
+Connect to MySQL using Terminal
+  $ mysql --host=localhost --user=root -p
+      - Usually we place localhost with the SQL IP address or domain name.
+      - localhost means we are connecting to MySQL on our machine.
+
+Quit MySQL server using Terminal:
+  mysql>quit
+  
+
+
+$ mysql -u <username> -p
+  - Where username is root (or any mysql username we have).
+  - -p prompts for password.
+
+Creating a Database
+  mysql> show databases;
+    - this command display all existing databases.
+
+  mysql>CREATE DATABASE <database>;
+    - Creates a new database, where <database> is our custom database name.
+    - Databases naming convention is snake_case.
+
+  mysql>DROP DATABASE <database>;
+    - Deletes a database.
+
+  mysql>USE <database>;
+    - This will instruct MySQL to use this specific database.
+
+  mysql>SELECT database();
+    - Display current used database;
+
+
+Creating tables
+  mysql>CREATE TABLE <table>
+  (
+    column_1 dataType(),
+    column_2 dataType()
+  );
+  
+  mysql>CREATE TABLE cats
+  (
+    name VARCHAR(50),
+    age INT
+  );
+
+  mysql>SHOW TABLES;
+   OR
+  mysql>DESC <table_name>; 
+   - Displays existing table in a database;
+  
+  mysql>SHOW COLUMNS FROM <table_name>;
+   - Displays columns in a table.
+
+
+DELETE/DROP a table
+  mysql>DROP TABLE <table_name>;
+   - Drops/Deletes table from a database.
+
+  mysql>DROP TABLE cats;
+
+
+INSERT 
+ INSERT INTO <table_name> (column_1, column_2)
+ VALUES ('value', 'value');
+
+ INSERT INTO cats (name, age)
+ VALUES ('Kitty', 5);
+
+
+SELECT
+ 
+ mysql>SELECT * <table_name>;
+
+
+NOT NULL
+
+CREATE TABLE cats 
+(
+  name VARCHAR(50) NOT NULL,
+  age INT NOT NULL,
+  description VARCHAR(100)
+);
+
+CREATE TABLE cats 
+(
+  ID INT NOT NULL AUTO_INCREMENT,
+  Name VARCHAR(50) NOT NULL,
+  Desc VARCHAR(100) DEFAULT 'Some text',
+  PRIMARY KEY (ID)
+);

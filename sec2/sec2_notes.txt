@@ -1,0 +1,19 @@
+SQL syntax rules
+
+SELECT                      Keyword
+  column_name                 Identifier
+FROM                        Keyword
+  table_name                  Identifier
+WHERE                       Keyword  
+  column_name > 20000;        Identifier
+
+
+
+  Data Definition vs Data Manipulation
+  - Data Definition 
+      - Create DBs and table
+      - Table relationship
+      - DB and table management (e.g. alter, drop)
+  
+  - Data Manipulation
+      - Insert, update, and delete

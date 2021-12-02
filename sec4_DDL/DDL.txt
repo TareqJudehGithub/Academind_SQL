@@ -1,0 +1,26 @@
+Data Definition Language (DDL)
+
+DDL includes:
+ Creating DBs and tables.
+  -  CREATE DATABASE;  CREATE TABLE;
+ Updates DBs and tables. ALTER DATABASE; ALTER TABLE;
+
+ - DB and table naming convention:
+  - DB and table should be in small case letters;
+  - DB and table name should be separated with an underscore.
+
+Create new Database command
+ - MySQL
+    $ CREATE DATABASE IF NOT EXISTS <database_name>;
+ - Postgres
+    $ CREATE DATABASE <database_name>;
+
+Create new table command
+ - In creating a table, IF NOT EXISTS is available in both MySQL and Postgres.
+ - IF NOT EXISTS is optional, it prevents errors in case table name already exists.
+    $ CREATE TABLE IF NOT EXISTS <table_name>;
+    $ CREATE TABLE <table_name>;
+Alter Database command
+
+Alter table command
+

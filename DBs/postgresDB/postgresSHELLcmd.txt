@@ -1,0 +1,11 @@
+Postgres Shell commands
+
+\l                  Shows all available DBs.
+\c <database_name>  Switches to another DB.
+\dt                 Shows table names in the selected DB.
+\d <table_name>     Describes a table.
+SELECT version();   Displays current SQL version.
+\g                  Re-executes the last command.
+\?                  Lists all available commands.
+\h                  Help - Example: \h DROP TABLE
+\q                  Quit Postgres Shell.
