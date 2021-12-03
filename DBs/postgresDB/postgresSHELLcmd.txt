@@ -1,5 +1,8 @@
 Postgres Shell commands
 
+psql -U <username>  Connects to Postgres Database server.
+  $ psql -U Postgres
+  
 \l                  Shows all available DBs.
 \c <database_name>  Switches to another DB.
 \dt                 Shows table names in the selected DB.

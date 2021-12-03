@@ -21,3 +21,6 @@ MySQL vs SQL
 Schema
  - Schema is a way to organize tables.
  
+ Postgres vs MySQL
+  - MySQL uses '' for string naming.
+  - Postgres uses "" for string naming. 

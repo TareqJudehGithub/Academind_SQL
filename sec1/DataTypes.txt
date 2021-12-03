@@ -1,0 +1,13 @@
+Data Types
+
+Text          Numeric         Date                Other
+
+CHAR(x)       INT,            DATE 'yyy-mm-dd'    BOOLEAN (true/false 1/0)
+VARCHAR(x)    SMALLINT        DATETIME            JSON
+TEXT          DECIMAL         TIMESTAMP
+LONGTEXT      NUMERIC
+ENUM
+
+
+Files
+Files are not stored in DBs, but only the path is.

@@ -1,3 +1,5 @@
+-- MySQL
+
 -- Create new DB 
 -- CREATE DATABASE talently;
 
